@@ -3,6 +3,7 @@ import { useStateValue } from './StateProvider'
 import "./Checkout.css"
 import CheckoutProduct from "./CheckoutProduct"
 import Subtotal from "./Subtotal.js"
+import Reviews from "./Reviews"
 
 
 
@@ -49,9 +50,10 @@ function Checkout() {
 
             </div>
             
-            {basket.length > 0 &&( 
+            {basket.length > 0 &&(
              <div className="checkout__right">
                  <Subtotal></Subtotal>
+                 <Reviews />
              </div>
 
             )}
